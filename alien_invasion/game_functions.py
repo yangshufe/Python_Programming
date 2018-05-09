@@ -12,5 +12,7 @@ def update_screen(ai_settings, screen, ship):
     # Redraw the screen for each pass through the loop.
     screen.fill(ai_settings.bg_color)
 
+    ship.blitme()
+
     # Make the most recently drawn screen visible.
     pygame.display.flip()
